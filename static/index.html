@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="rus" ng-app="myApp" manifest="default.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиника доктора Селезнёва</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.17/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css/local.stylesheets.css">
+</head>
+<body ng-controller="AppCtrl">
+<header>
+    <div class="menubtn" ng-click="openNav()">&#9776;</div>
+    <div class="logo"><img src="logo.png"></div>
+</header>
+<div id="menu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+    <a ui-sref="Tests" ng-click="closeNav()">Тесты для вашего здоровья</a>
+    <a href="https://www.youtube.com/channel/UCQlSkb2tWfJAhV-hD_t5jUQ/videos">Мини-лекции</a>
+    <a ui-sref="Question" ng-click="closeNav()">Задай вопрос врачу</a>
+    <a ui-sref="Appointment" ng-click="closeNav()">Запись на прием</a>
+    <a ui-sref="Lk" ng-click="closeNav()">Личный кабинет</a>
+    <a href="http://seleznevclinic.ru/about" ng-click="closeNav()">О клинике</a>
+</div>
+<div class="content">
+    <div ui-view></div>
+</div>
+</body>
+</html>

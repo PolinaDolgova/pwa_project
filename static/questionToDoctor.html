@@ -1,0 +1,84 @@
+<div class="question">
+    <form method="POST" action="https://formspree.io/kondrashova_study@mail.ru" ; id="questForm">
+        <div class="question">
+            <table>
+                <tr>
+                    <td>
+                        <label>ФИО</label>
+                        <br>
+                        <input type="text" name="ФИО" required placeholder="ФИО">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>e-mail</label>
+                        <br>
+                        <input type="text" name="e-mail" required placeholder="e-mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Направление</label>
+                        <br>
+                        <select ng-model="choosenDirection" form="questForm" placeholder="Направление" required>
+                            <option ng-repeat="direction in directions">
+                                {{direction}}
+                            </option>
+                        </select>
+                    </td>
+                    <td>
+                        <input text="text" name="Направление" value="{{choosenDirection}}" hidden>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Вопрос</label>
+                        <br>
+                        <textarea rows="4" cols="50" name="question" placeholder="Задайте здесь вопрос..."
+                                  form="questForm"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+    <!--<table>-->
+    <!--<tr>-->
+    <!--<td>-->
+    <!--<label>ФИО*</label>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<input type="text" ng-model="FIO" required>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>-->
+    <!--<label>e-mail*</label>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<input type="text" ng-model="email" required>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>-->
+    <!--<label>Направление*</label>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<select ng-model="direction" required>-->
+    <!--<option ng-repeat="direction in directions">-->
+    <!--{{direction}}-->
+    <!--</option>-->
+    <!--</select>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>-->
+    <!--<label>Вопрос*</label>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<textarea ng-model="question" required></textarea>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--</table>-->
+    <!--<button type="submit">Отправить</button>-->
+</div>

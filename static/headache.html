@@ -1,0 +1,239 @@
+<div class="testslist">
+    <button ng-click="openTest(hiddenTest[0])">Мигрень</button>
+    <div ng-hide="hiddenTest[0].hidden" class="test">
+        <label>
+            1. Болит в основном с одной стороны головы
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            2. Интенсивность - средняя или сильная
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            3. Пульсирующий характер боли
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            4. От движения боль усиливается
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button ng-click="openRes(hiddenTest[0])" class="result">Узнать результат</button>
+        <br>
+        <div ng-hide="hiddenTest[0].hidresult">
+            <div class="result">
+                <h2>Результат:</h2>
+                <label>
+                    Два и более положительных ответа указывают на наличие мигрени. Причины -
+                    стресс,
+                    гормональные нарушения, резкие перепады погоды.
+                </label>
+                <br>
+            </div>
+            <br>
+            <div class="recommendation">
+                <h2>Как лечить:</h2>
+                <label>
+                    Таблеток от мигрени нет. Надо обеспечить себе полный покой и избегать таких
+                    раздражителей,
+                    как сигаретный дым, громкие звуки, резкие запахи. Для профилактики полезно заниматься
+                    спортом.</label>
+            </div>
+            <br>
+        </div>
+    </div>
+    <button ng-click="openTest(hiddenTest[1])">Боль от повышенного давления</button>
+    <div ng-hide="hiddenTest[1].hidden" class="test">
+        <label>
+            1. Боль распространяется по всей голове
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            2. Монотонный характер боли
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            3. Давление в области глаз, тошнота
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            4. Усиливается от яркого света
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button ng-click="openRes(hiddenTest[1])" class="result">Узнать результат</button>
+        <br>
+        <div ng-hide="hiddenTest[1].hidresult">
+            <div class="result">
+                <h2>Результат:</h2>
+                <label>
+                    Если вы два и более раз отметили «да», следует срочно померить давление. Такая
+                    боль
+                    провоцируется резкой переменой погоды, алкоголем, утомлением.</label>
+            </div>
+            <br>
+            <div class="recommendation">
+                <h2>Как лечить:</h2>
+                <label>
+                    Примите не обезболивающее, а таблетку от высокого давления. Исключите из
+                    рациона
+                    кока-колу,
+                    кофе, зеленый чай - они повышают давление.</label>
+            </div>
+            <br>
+        </div>
+    </div>
+    <button ng-click="openTest(hiddenTest[2])">Кластерная боль (в области глаз)</button>
+    <div ng-hide="hiddenTest[2].hidden" class="test">
+        <label>
+            1. Боль с одной стороны около глаза
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            2. Резкая, сопровождается покраснением глаз, слезоточивостью, насморком
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label>
+            3. Кратковременная, но часто повторяется
+        </label>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <button>Да</button>
+                </td>
+                <td>
+                    <button>Нет</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button ng-click="openRes(hiddenTest[2])" class="result">Узнать результат</button>
+        <br>
+        <div ng-hide="hiddenTest[2].hidresult">
+            <div class="result">
+                <h2>Результат:</h2>
+                <label>
+                    Вы страдаете именно этой формой головной боли, если два и более раз отметили
+                    «да».
+                    Случается она чаще всего весной или осенью, но причины до сих пор неизвестны.</label>
+            </div>
+            <br>
+            <div class="recommendation">
+                <h2>Как лечить:</h2>
+                <label>
+                    Лечатся такие боли кислородной терапией, но сначала важно исключить другие
+                    заболевания с похожими симптомами. Поэтому обратитесь за консультацией к врачу.</label>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="question">
+    <form method="POST" action="https://formspree.io/kondrashova_study@mail.ru" ; id="appointmentForm">
+        <table>
+            <tr>
+                <td>
+                    <label>ФИО</label>
+                    <br>
+                    <input type="text" name="ФИО" required placeholder="ФИО">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Номер телефона</label>
+                    <br>
+                    <input type="text" name="Номер телефона" required placeholder="Телефон">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Выберите дату</label>
+                    <br>
+                    <input type="date" name="Дата" ng-model="dateTime">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Выберите время</label>
+                    <br>
+                    <select ng-model="calltime" form="appointmentForm" required>
+                        <option ng-repeat="time in timelist">
+                            {{time}}
+                        </option>
+                    </select>
+                <td>
+                    <input text="text" name="Время" value="{{calltime}}" hidden>
+                </td>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
